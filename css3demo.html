@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通过CSS3的calc()做响应式</title>
+  <style>
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none
+    }
+
+    /* li {
+      float: left;
+      width: 33.3333%;
+      height: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      background: #FF6666;
+      border: 5px solid #DAC8A7;
+    } */
+
+    li {
+      float: left;
+      /* width: 33.3333%; */
+      height: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      background: #FF6666;
+      border: 5px solid #DAC8A7;
+      /* (width - (padding + border)*2 - margin) */
+      width: calc(33.3333% - (10px + 5px)*2 - 15px);
+    }
+
+    ul {
+      /* 优化,处理左右边15px的间距,让两边都挨边 */
+      margin-right: -15px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+</body>
+
+</html>

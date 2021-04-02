@@ -246,16 +246,91 @@
             name: 'ProComponents',
             icon: 'SmileOutlined',
             path: '/procomponents',
-            component: './procomponents/controlledmode',
             routes: [
-              // {
-              //   path: '/procomponents',
-              //   redirect: '/procomponents/controlledmode',
-              // },
+              {
+                path: '/procomponents',
+                redirect: '/procomponents/statisticCard'
+              },
+              {
+                name: '指标卡+ProCard',
+                icon: 'BarChartOutlined',
+                path: '/procomponents/statisticCard',
+                routes: [
+                  {
+                    path: '/procomponents/statisticCard',
+                    redirect: '/procomponents/statisticCard/statisticcardbaseuse'
+                  },
+                  {
+                    name: '基础使用',
+                    path: '/procomponents/statisticCard/statisticcardbaseuse',
+                    component: './procomponents/staticCardBaseUse',
+                  },
+                  {
+                    name: 'StaticCard',
+                    path: '/procomponents/statisticCard/staticcard',
+                    component: './procomponents/staticCard',
+                  },
+                  {
+                    name: 'mini进度条',
+                    path: '/procomponents/statisticCard/miniprogeress',
+                    component: './procomponents/staticCardOnlyProgress',
+                  },
+                  {
+                    name: 'mini面积图',
+                    path: '/procomponents/statisticCard/miniarea',
+                    component: './procomponents/staticCardOnlyMiniArea',
+                  },
+                  {
+                    name: '折线图',
+                    path: '/procomponents/statisticCard/linechart',
+                    component: './procomponents/staticCardOnlyChart',
+                  },
+                  {
+                    name: '环形图',
+                    path: '/procomponents/statisticCard/ringchart',
+                    component: './procomponents/staticCardOnlyRing',
+                  },
+                  {
+                    name: '总分/主次关系(环形图)',
+                    path: '/procomponents/statisticCard/statisticCardwithring',
+                    component: './procomponents/staticCardWithRing',
+                  },
+                  {
+                    name: '环形图plus',
+                    path: '/procomponents/statisticCard/ringchartplus',
+                    component: './procomponents/staticCardRing',
+                  },
+                  {
+                    name: '面积图',
+                    path: '/procomponents/statisticCard/areachart',
+                    component: './procomponents/staticCardOnlyArea',
+                  },
+                  {
+                    name: '柱状图',
+                    path: '/procomponents/statisticCard/columnchart',
+                    component: './procomponents/staticCardOnlyColumn',
+                  },
+                  {
+                    name: 'ChartTable',
+                    path: '/procomponents/statisticCard/charttable',
+                    component: './procomponents/staticCardTable',
+                  },
+                  {
+                    name: '卡片布局',
+                    path: '/procomponents/statisticCard/cardlayout',
+                    component: './procomponents/staticCardLayout',
+                  },
+                  {
+                    name: 'TabPaneCard基本使用',
+                    path: '/procomponents/statisticCard/tabpanebase',
+                    component: './procomponents/staticProCardBaseTabPane',
+                  },
+                ]
+              },
               {
                 name: '高级表格',
                 icon: 'SolutionOutlined',
-                path: '/protable',
+                path: '/procomponents/protable',
                 routes: [
                   {
                     name: '受控模式',
@@ -306,10 +381,6 @@
                 icon: 'SolutionOutlined',
                 path: '/proform',
                 routes: [
-                  // {
-                  //   path: '/proform',
-                  //   redirect: '/proform/proformWeditable',
-                  // },
                   {
                     name: '高级表单和可编辑表格',
                     icon: 'SolutionOutlined',

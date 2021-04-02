@@ -45,6 +45,7 @@
     "not ie <= 10"
   ],
   "dependencies": {
+    "@ant-design/charts": "^1.1.0",
     "@ant-design/icons": "^4.0.0",
     "@ant-design/pro-card": "^1.10.3",
     "@ant-design/pro-descriptions": "^1.6.0",
@@ -54,7 +55,7 @@
     "@ant-design/pro-skeleton": "^1.0.0-beta.2",
     "@ant-design/pro-table": "^2.30.0",
     "@umijs/route-utils": "^1.0.33",
-    "antd": "^4.11.2",
+    "antd": "^4.14.1",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "mobx": "^6.0.4",
@@ -62,6 +63,7 @@
     "moment": "^2.25.3",
     "omit.js": "^2.0.2",
     "qs": "^6.9.0",
+    "rc-resize-observer": "^1.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.8.6",
     "react-helmet-async": "^1.0.4",

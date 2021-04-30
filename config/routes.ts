@@ -333,6 +333,13 @@
                 path: '/procomponents/protable',
                 routes: [
                   {
+                    name: '基础demo',
+                    icon: 'FileDoneOutlined',
+                    path: '/protable/baseprotable',
+                    component: './procomponents/baseprotable',
+                    exact: false,
+                  },
+                  {
                     name: '受控模式',
                     icon: 'FileDoneOutlined',
                     path: '/protable/controlledmode',
@@ -418,6 +425,13 @@
               {
                 path: '/protable',
                 redirect: '/protable/controlledmode',
+              },
+              {
+                name: '基础demo',
+                icon: 'FileDoneOutlined',
+                path: '/protable/baseprotable',
+                component: './procomponents/baseprotable',
+                exact: false,
               },
               {
                 name: '受控模式',

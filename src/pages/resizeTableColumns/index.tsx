@@ -4,7 +4,6 @@ import { Resizable } from 'react-resizable';
 import './index.less'
 
 const ResizableTitle = (props: { [x: string]: any; onResize: any; width: any; }) => {
-  console.log('PROPS',props);
   const { onResize, width, ...restProps } = props;
 
   if (!width) {
@@ -25,12 +24,13 @@ const ResizableTitle = (props: { [x: string]: any; onResize: any; width: any; })
       }
       onResize={onResize}
       draggableOpts={{ enableUserSelectHack: false }}
+      minConstraints={[120, 120]} 
+      maxConstraints={[300, 300]}
     >
       <th {...restProps} />
     </Resizable>
   );
 };
-
 class Demo extends React.Component {
   state = {
     columns: [

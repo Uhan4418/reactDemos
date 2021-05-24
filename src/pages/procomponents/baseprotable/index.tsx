@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unused-state */
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button, DatePicker, Space, Table } from 'antd';
 import type { ProColumns } from '@ant-design/pro-table';
 import ProTable from '@ant-design/pro-table';
@@ -125,6 +125,12 @@ const columns: ProColumns<TableListItem>[] = [
 const App = () => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([])
 
+  const actionRef = useRef();
+
+  useEffect(() => {
+    console.log("actionRef",actionRef);
+  }, [actionRef])
+
   const onSelectChange = (selectedRowKeys,selectedRows) => {
     console.log('selectedRowKeys changed: ', selectedRowKeys,selectedRows);
     // this.setState({ selectedRowKeys });
@@ -208,6 +214,7 @@ const App = () => {
       rowKey="key"
       headerTitle="批量操作"
       toolBarRender={() => [<Button key="show">查看日志</Button>]}
+      actionRef={actionRef}
     />
   );
 };

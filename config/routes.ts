@@ -306,16 +306,16 @@
                 component: './tablecolumnMoving',
               },
               {
-                path: '/demos/resizetablecolumns',
-                name: '表格表头Resize',
-                icon: 'smile',
-                component: './resizeTable',
-              },
-              {
                 path: '/demos/resizabletables',
                 name: '表格列伸缩',
                 icon: 'smile',
                 component: './resizeTableColumns',
+              },
+              {
+                path: '/demos/columnssorttables',
+                name: '表格列排序选择',
+                icon: 'smile',
+                component: './TableColumnsSorter',
               },
             ]
           },
@@ -402,6 +402,13 @@
                     path: '/procomponents/statisticCard/tabpanebase',
                     component: './procomponents/staticProCardBaseTabPane',
                   },
+                  {
+                    name: '高级表格列伸缩',
+                    icon: 'SolutionOutlined',
+                    path: '/protable/protableresizable',
+                    component: './procomponents/ProTableResizable',
+                    exact: false,
+                  },
                 ]
               },
               {
@@ -456,6 +463,13 @@
                     icon: 'SolutionOutlined',
                     path: '/protable/valuetypestyle',
                     component: './procomponents/valuetype_style',
+                    exact: false,
+                  },
+                  {
+                    name: '高级表格列伸缩',
+                    icon: 'SolutionOutlined',
+                    path: '/protable/protableresizable',
+                    component: './procomponents/ProTableResizable',
                     exact: false,
                   },
                 ]
@@ -550,6 +564,20 @@
                 icon: 'SolutionOutlined',
                 path: '/protable/valuetypestyle',
                 component: './procomponents/valuetype_style',
+                exact: false,
+              },
+              {
+                name: '高级表格列伸缩',
+                icon: 'SolutionOutlined',
+                path: '/protable/protableresizable',
+                component: './procomponents/ProTableResizable',
+                exact: false,
+              },
+              {
+                name: '高级表格列设置',
+                icon: 'SolutionOutlined',
+                path: '/protable/procolumnsorter',
+                component: './procomponents/ProColumnSorter',
                 exact: false,
               },
             ]

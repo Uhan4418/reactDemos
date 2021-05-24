@@ -81,14 +81,6 @@ export default () => {
     },
   });
 
-  const actionRef = useRef();
-
-  useEffect(() => {
-    console.log("actionRef",actionRef.current);
-    console.log("actionRef后",actionRef.reload);
-
-  }, [actionRef.current])
-
   return (
     <ProTable<TableListItem, { keyWord?: string }>
       columns={columns}
@@ -117,11 +109,17 @@ export default () => {
       onColumnsStateChange={(map) => setColumnsStateMap(map)}
       search={false}
       dateFormatter="string"
-      headerTitle="受控模式"
-      actionRef={actionRef}
+      headerTitle="高级表格列设置(自定义排序)"
       onHeaderRow={(values:any) => {
         return console.log("!!!@!@", values);
       }}
+      // onLoad
+      // onLoadingChange
+      // onReset
+      // onSizeChange
+      // onRow
+      // onChange
+      // onSubmit
     />
   );
 };

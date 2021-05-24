@@ -214,6 +214,10 @@ export default () => {
       }}
     // 展示标题
     // headerTitle="toolbar自定义"
+    //  列设置onClick监听
+    onHeaderRow={(values:any) => {
+      console.log("!!!@!@",values);
+    } }
     />
   );
 };

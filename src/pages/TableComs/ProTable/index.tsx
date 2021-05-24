@@ -139,7 +139,7 @@ const menu = (
   </Menu>
 );
 
-export default () => {
+const Demo = () => {
   const actionRef = useRef<ActionType>();
   return (
     <ProTable<GithubIssueItem>
@@ -190,3 +190,5 @@ export default () => {
     />
   );
 };
+
+export default Demo

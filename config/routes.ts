@@ -46,10 +46,51 @@
             ],
           },
           {
+            path: '/wechat',
+            name: '微信登录',
+            icon: 'smile',
+            component: './WechatLogin',
+          },
+          {
             path: '/hiddensidebar',
             name: '不展示侧边栏demo',
             icon: 'smile',
             component: './hiddensidebar',
+            // hideChildrenInMenu: true,
+            // hideInMenu: true,
+            // routes: [
+            //   {
+            //     path: '/admin/sub-page',
+            //     name: 'sub-page',
+            //     icon: 'smile',
+            //     component: './Welcome',
+            //     hideInMenu: true,
+            //     // authority: ['admin'],
+            //   },
+            // ],
+          },
+          {
+            path: '/tablecoms',
+            name: '表格组件库',
+            icon: 'smile',
+            routes: [
+              {
+                path: '/tablecoms',
+                redirect: '/tablecoms/tablePro',
+              },
+              {
+                path: '/tablecoms/tablePro',
+                name: 'ProTable基础使用',
+                icon: 'setting',
+                component: './TableComs/ProTable',
+              },
+              {
+                path: '/tablecoms/ResizableTable',
+                name: 'ResizableTable',
+                icon: 'setting',
+                component: './TableComs/ResizableTable',
+              },
+            ]
           },
           {
             path: '/reactdemos',
@@ -187,6 +228,18 @@
                   }
                 ]
               },
+              // {
+              //   path: '/reactdemos/gridmanagerreact',
+              //   name: 'GridManagerReact',
+              //   icon: 'setting',
+              //   component: './reactdemos/GridManagerReact',
+              // },
+              // {
+              //   path: '/reactdemos/reactdatagrid',
+              //   name: 'reactDataGrid',
+              //   icon: 'setting',
+              //   component: './reactdemos/reactDataGrid',
+              // },
             ]
           },
           {
@@ -239,6 +292,30 @@
                 name: 'react小例子',
                 icon: 'smile',
                 component: './reactdemo',
+              },
+              {
+                path: '/demos/uploadfile',
+                name: '表单文件上传',
+                icon: 'smile',
+                component: './uploadfile',
+              },
+              {
+                path: '/demos/movingColumns',
+                name: '表格表头移动增加宽度',
+                icon: 'smile',
+                component: './tablecolumnMoving',
+              },
+              {
+                path: '/demos/resizetablecolumns',
+                name: '表格表头Resize',
+                icon: 'smile',
+                component: './resizeTable',
+              },
+              {
+                path: '/demos/resizabletables',
+                name: '表格列伸缩',
+                icon: 'smile',
+                component: './resizeTableColumns',
               },
             ]
           },

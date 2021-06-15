@@ -90,7 +90,7 @@
                 icon: 'setting',
                 component: './TableComs/ResizableTable',
               },
-            ]
+            ],
           },
           {
             path: '/reactdemos',
@@ -126,7 +126,7 @@
                     name: '在嵌套组件中更新Context',
                     component: './reactdemos/communication/contextdemos/contextUpdateInCom',
                   },
-                ]
+                ],
               },
               {
                 path: '/reactdemos/refsdemos',
@@ -137,27 +137,27 @@
                     path: '/reactdemos/refsdemos/addrefsfordom',
                     name: '为DOM元素添加ref',
                     component: './reactdemos/refsdemos/addrefsfordom',
-                    icon: 'setting',  //  icon在次层级已不生效
+                    icon: 'setting', //  icon在次层级已不生效
                   },
                   {
                     path: '/reactdemos/refsdemos/addrefsforclass',
                     name: '为class组件添加ref',
                     component: './reactdemos/refsdemos/addrefsforclass',
-                    icon: 'setting',  //  icon在次层级已不生效
+                    icon: 'setting', //  icon在次层级已不生效
                   },
                   {
                     path: '/reactdemos/refsdemos/refswithfc',
                     name: 'Refs与函数组件',
                     component: './reactdemos/refsdemos/refswithFC',
-                    icon: 'setting',  //  icon在次层级已不生效
+                    icon: 'setting', //  icon在次层级已不生效
                   },
                   {
                     path: '/reactdemos/refsdemos/callbackrefs',
                     name: '回调Refs(过时)',
                     component: './reactdemos/refsdemos/callbackrefs',
-                    icon: 'setting',  //  icon在次层级已不生效
+                    icon: 'setting', //  icon在次层级已不生效
                   },
-                ]
+                ],
               },
               {
                 path: '/reactdemos/errorBoundariesDemo',
@@ -180,7 +180,7 @@
                     name: '带key的fragment',
                     component: './reactdemos/fragmentdemos/fragmentusebykey',
                   },
-                ]
+                ],
               },
               {
                 path: '/reactdemos/controlledcom',
@@ -214,7 +214,7 @@
                     path: '/reactdemos/lazyRender',
                     name: '懒加载',
                     component: './reactdemos/lazyrender',
-                    icon: 'setting',  //  icon在次层级已不生效
+                    icon: 'setting', //  icon在次层级已不生效
                   },
                   {
                     path: '/reactdemos/errorboundaries',
@@ -225,8 +225,8 @@
                     path: '/reactdemos/codeDiving',
                     name: '路由代码分割',
                     component: './reactdemos/codeDiving',
-                  }
-                ]
+                  },
+                ],
               },
               // {
               //   path: '/reactdemos/gridmanagerreact',
@@ -240,7 +240,7 @@
               //   icon: 'setting',
               //   component: './reactdemos/reactDataGrid',
               // },
-            ]
+            ],
           },
           {
             name: 'Ant Demos',
@@ -317,7 +317,13 @@
                 icon: 'smile',
                 component: './TableColumnsSorter',
               },
-            ]
+              {
+                path: '/demos/resizablecolumns',
+                name: '表格列伸缩(完善)',
+                icon: 'smile',
+                component: './antComponents/ResizableColumns',
+              },
+            ],
           },
           {
             name: 'ProComponents',
@@ -326,7 +332,7 @@
             routes: [
               {
                 path: '/procomponents',
-                redirect: '/procomponents/statisticCard'
+                redirect: '/procomponents/statisticCard',
               },
               {
                 name: '指标卡+ProCard',
@@ -335,7 +341,7 @@
                 routes: [
                   {
                     path: '/procomponents/statisticCard',
-                    redirect: '/procomponents/statisticCard/statisticcardbaseuse'
+                    redirect: '/procomponents/statisticCard/statisticcardbaseuse',
                   },
                   {
                     name: '基础使用',
@@ -409,7 +415,7 @@
                     component: './procomponents/ProTableResizable',
                     exact: false,
                   },
-                ]
+                ],
               },
               {
                 name: '高级表格',
@@ -472,7 +478,7 @@
                     component: './procomponents/ProTableResizable',
                     exact: false,
                   },
-                ]
+                ],
               },
               {
                 name: '高级表单',
@@ -504,7 +510,7 @@
                     component: './procomponents/proformvisibleorsetvisible',
                     exact: false,
                   },
-                ]
+                ],
               },
             ],
           },
@@ -580,7 +586,7 @@
                 component: './procomponents/ProColumnSorter',
                 exact: false,
               },
-            ]
+            ],
           },
           {
             name: '高级表单',
@@ -616,7 +622,7 @@
                 component: './procomponents/proformvisibleorsetvisible',
                 exact: false,
               },
-            ]
+            ],
           },
           {
             name: 'list.table-list',

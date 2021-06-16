@@ -52,6 +52,12 @@
             component: './WechatLogin',
           },
           {
+            path: '/tic-tac-toe',
+            name: '三连棋小游戏',
+            icon: 'smile',
+            component: './TicTacToe',
+          },
+          {
             path: '/hiddensidebar',
             name: '不展示侧边栏demo',
             icon: 'smile',
